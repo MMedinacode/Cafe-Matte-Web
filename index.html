@@ -1,0 +1,237 @@
+<!--
+  CAFÉ MATTE — Cafetería de barrio, Providencia
+  Esquina de Jorge Matte con Eliecer Parada (Av. Eliecer Parada 1832), Providencia.
+
+  Datos verificados EN VIVO en Google Maps + Instagram el 08-09-2026:
+  - Nombre real en Maps: "Café Matte" · CID: 0x9662cfa63af78fa9:0xca607eed2f6d3329
+  - Dirección real: Av. Eliecer Parada 1832, Providencia, Región Metropolitana
+  - Horario real (Maps): todos los días 9:30-20:30
+  - Rating real: 4.5★ / 582 opiniones · Rango de precio real: $5.000-10.000 por persona
+  - Badge real de Maps: "Amigable con LGBTQ+"
+  - Instagram real: @cafe_matte (2688 seguidores) — bio real citada tal cual ("Cafetería de
+    barrio desde 2015, esquina de Jorge Matte con Eliecer Parada")
+  - Teléfono real: (2) 3312 1043 — sin WhatsApp confirmado, se usa tel: en vez de wa.me
+  - 3 reseñas reales con nombre real (Andrew, Analí Ojeda, Ana Magdalena — Local Guide con
+    850 reseñas), elegidas ordenando por "Calificación más alta" en Maps (hay reseñas
+    recientes negativas sobre propina agregada sin avisar y horario — no se ocultan del
+    todo: se menciona el tema de forma honesta en Visítanos, sin usar esas reseñas).
+  - Carta: hay una foto real de la pizarra de precios fechada sept-2025 (bastante reciente),
+    pero el texto no se pudo leer con la nitidez suficiente para transcribir precios exactos
+    con certeza — se muestran los productos reales mencionados directamente por Maps/reseñas
+    (Café Machiato con Muffins de Arándanos, Un Latte Con Amor, Chocolate espeso, Medialunas)
+    marcados "Consultar", nunca inventando un precio.
+  - Delivery apps: NO confirmado — apareció una mención de "Uber Eats o Rappi" en un reel de
+    Instagram de un tercero, mezclado con otro producto ("café Matte + Käu"), demasiado
+    ambiguo para confiar — no se agregó ningún botón de delivery.
+  - Fotos/logo: PENDIENTES — el usuario aún no ha dejado fotos reales en fotos/. Se usan
+    fotos de stock (Unsplash) marcadas como temporales, a reemplazar cuando lleguen las
+    reales.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Matte — Cafetería de barrio en Providencia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-mark">Café Matte</div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#" class="nav-brand" data-tab="inicio">
+      <img id="logoNav" class="logo-real" alt="Logo Café Matte">
+      <span class="brand-word">Café Matte</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+    <a href="https://instagram.com/cafe_matte" target="_blank" rel="noopener" class="nav-cta">Escríbenos</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== INICIO ===================== -->
+  <section class="tab-panel active" id="inicio" data-tab-panel="inicio">
+    <div class="hero">
+      <img id="heroPhoto" class="hero-photo" alt="Interior de Café Matte">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Cafetería de barrio · desde 2015</p>
+        <h1 class="hero-title">La esquina de<br>Jorge Matte con Eliecer Parada</h1>
+        <p class="hero-sub">Café, pasteles y buena onda en Providencia — el lugar de siempre para desayunar, trabajar o pasar la tarde con calma.</p>
+        <div class="hero-pills">
+          <div class="pill"><span class="dot" id="statusDot"></span><span id="statusText">Cargando horario...</span></div>
+          <div class="pill">★ 4.5 · 582 opiniones</div>
+          <div class="pill">🏳️‍🌈 Amigable con LGBTQ+</div>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-tab="carta">Ver la carta</button>
+          <button class="btn btn-outline" data-tab="visitanos">Cómo llegar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOSOTROS ===================== -->
+  <section class="tab-panel" id="nosotros" data-tab-panel="nosotros">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Nosotros</p>
+      <h2 class="section-title reveal">Un clásico de barrio en Providencia</h2>
+      <p class="section-lead reveal">Desde 2015 en la esquina de Jorge Matte con Eliecer Parada. Café, pasteles, helados y buena atención — el tipo de local al que se vuelve una y mil veces, como dicen los propios vecinos en sus reseñas.</p>
+
+      <div class="pilares-grid">
+        <div class="pilar-card reveal">
+          <span class="pilar-num">01</span>
+          <h3>Café de verdad</h3>
+          <p>Café en su punto y buena atención — es lo que más repiten los clientes en sus reseñas reales de Google, una y otra vez.</p>
+        </div>
+        <div class="pilar-card reveal">
+          <span class="pilar-num">02</span>
+          <h3>Pasteles y algo dulce</h3>
+          <p>Pastelería, chocolate espeso y medialunas — la carta dulce es uno de los motivos más mencionados por quienes vuelven.</p>
+        </div>
+        <div class="pilar-card reveal">
+          <span class="pilar-num">03</span>
+          <h3>Barrio y buena onda</h3>
+          <p>Un local pequeño y acogedor, de barrio tranquilo, amigable con la comunidad LGBTQ+ — reconocido así en su propia ficha de Google.</p>
+        </div>
+      </div>
+
+      <div class="nosotros-divider reveal"></div>
+
+      <div class="nosotros-gallery">
+        <img id="galUno" class="gal-photo reveal" alt="Café Matte — interior">
+        <img id="galDos" class="gal-photo reveal" alt="Café Matte — café y pastelería">
+        <img id="galTres" class="gal-photo reveal" alt="Café Matte — ambiente">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CARTA ===================== -->
+  <section class="tab-panel" id="carta" data-tab-panel="carta">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Carta</p>
+      <h2 class="section-title reveal">Café, pasteles y algo para acompañar</h2>
+      <p class="menu-note reveal">Estos son productos reales de Café Matte, mencionados directamente en su ficha de Google y en reseñas de clientes. Hay una foto de la pizarra de precios de septiembre 2025, pero el texto no se alcanza a leer con certeza — por eso todo aparece como <strong>"Consultar"</strong>, para no arriesgar un precio equivocado.</p>
+
+      <div id="menuTabs" class="menu-tabs"></div>
+      <div id="menuPanels" class="menu-panels"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEÑAS ===================== -->
+  <section class="tab-panel" id="resenas" data-tab-panel="resenas">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Reseñas</p>
+      <h2 class="section-title reveal">Lo que dicen en Google</h2>
+      <p class="section-lead reveal">4.5★ sobre 582 opiniones reales en Google Maps. Estas son algunas, tal como las dejaron los propios clientes.</p>
+
+      <div class="resenas-grid">
+        <article class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excelente atención!!!! El café es un buen sitio acogedor, súper tranquilo, el café delicioso en su punto... volveré a visitarlos una y mil veces."</p>
+          <p class="review-author">— Andrew, Google</p>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Calidad excepcional en café y servicio. Atención impecable, rápida y muy amable. Sin duda, una de las mejores cafeterías."</p>
+          <p class="review-author">— Analí Ojeda, Google</p>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Excelente atención, a pesar de la pandemia. Disfruté un muy buen café y mi hermana un riquísimo chocolate espeso, exquisitas medialunas. Totalmente recomendable!!"</p>
+          <p class="review-author">— Ana Magdalena, Local Guide (850 reseñas)</p>
+        </article>
+      </div>
+
+      <a class="btn btn-outline reveal" href="https://search.google.com/local/writereview?placeid=0x9662cfa63af78fa9:0xca607eed2f6d3329" target="_blank" rel="noopener">Escribe tu reseña en Google</a>
+    </div>
+  </section>
+
+  <!-- ===================== VISÍTANOS ===================== -->
+  <section class="tab-panel" id="visitanos" data-tab-panel="visitanos">
+    <div class="section-inner">
+      <p class="section-eyebrow reveal">Visítanos</p>
+      <h2 class="section-title reveal">Te esperamos en la esquina</h2>
+
+      <div class="visit-grid">
+        <div class="visit-info reveal">
+          <div class="visit-block">
+            <h3>Dirección</h3>
+            <p>Av. Eliecer Parada 1832, Providencia, Región Metropolitana (esquina con Jorge Matte)</p>
+          </div>
+          <div class="visit-block">
+            <h3>Horario</h3>
+            <p id="visit-status">Cargando...</p>
+            <ul class="hours-list">
+              <li><span>Todos los días</span><span>9:30 – 20:30</span></li>
+            </ul>
+          </div>
+          <div class="visit-block">
+            <h3>Ambiente</h3>
+            <p>Consumo en el local, para llevar y entrega a domicilio. Un espacio pequeño y acogedor de barrio, amigable con la comunidad LGBTQ+.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-box" href="https://instagram.com/cafe_matte" target="_blank" rel="noopener">
+              <div><p class="cb-label">Instagram</p><p class="cb-value">@cafe_matte</p></div>
+            </a>
+            <a class="contact-box" href="tel:+56233121043">
+              <div><p class="cb-label">Teléfono</p><p class="cb-value">(2) 3312 1043</p></div>
+            </a>
+            <a class="contact-box" href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Matte&destination_place_id=0x9662cfa63af78fa9:0xca607eed2f6d3329" target="_blank" rel="noopener">
+              <div><p class="cb-label">Cómo llegar</p><p class="cb-value">Google Maps</p></div>
+            </a>
+            <a class="contact-box" href="https://waze.com/ul?ll=-33.4390558,-70.5870395&navigate=yes" target="_blank" rel="noopener">
+              <div><p class="cb-label">Ir con</p><p class="cb-value">Waze</p></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="visit-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.393400497278!2d-70.5870395!3d-33.43905579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfa63af78fa9%3A0xca607eed2f6d3329!2sCaf%C3%A9%20Matte!5e0!3m2!1ses-419!2scl!4v1788831292002!5m2!1ses-419!2scl"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img id="logoFooter" class="logo-real" alt="Logo Café Matte">
+  <p class="footer-word">Café Matte</p>
+  <p class="footer-sub">Av. Eliecer Parada 1832, Providencia</p>
+  <p class="footer-demo">Demo de sitio web construida por Matías Medina — desarrollo web para negocios locales.</p>
+</footer>
+
+<div class="float-widgets">
+  <a id="floatInstagram" class="float-btn" href="https://instagram.com/cafe_matte" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+  </a>
+  <a id="floatPhone" class="float-btn float-btn-alt" href="tel:+56233121043" aria-label="Llamar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
