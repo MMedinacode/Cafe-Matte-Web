@@ -124,12 +124,16 @@ main{ padding-top:64px; }
   display:flex; align-items:center;
   background:var(--ink-2);
 }
+/* La foto del hero es una foto REAL del local, así que va casi a plena
+   opacidad: el degradado de abajo basta para que el texto se lea sin
+   esconder la fachada. Antes iba a .5 porque era una foto de stock que
+   daba lo mismo que se viera. */
 .hero-photo{
-  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.5;
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.92;
 }
 .hero-overlay{
   position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(42,29,20,0.5) 0%, rgba(42,29,20,0.72) 60%, rgba(42,29,20,0.92) 100%);
+  background:linear-gradient(180deg, rgba(42,29,20,0.34) 0%, rgba(42,29,20,0.58) 55%, rgba(42,29,20,0.88) 100%);
 }
 .hero-content{
   position:relative; z-index:2; max-width:720px; margin:0 auto; padding:120px 24px 80px;

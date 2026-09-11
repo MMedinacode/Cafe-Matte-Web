@@ -1,17 +1,17 @@
 /* ============================================================
-   FOTOS Y LOGO — PENDIENTES (placeholder temporal)
+   FOTOS REALES DEL LOCAL (11-09-2026) — ya no queda stock
    ============================================================
-   El usuario aún no ha dejado fotos reales en fotos/. Mientras tanto
-   se usan fotos de stock de Unsplash (nunca fotos reales de otra
-   cafetería del portafolio). Reemplazar por las reales apenas lleguen. */
-const LOGO_SRC = 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=200&h=200&fit=crop&q=80';
-const HERO_SRC = 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1600&q=80';
-const GAL_UNO_SRC = 'https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=80';
-const GAL_DOS_SRC = 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80';
-const GAL_TRES_SRC = 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80';
+   8 fotos bajadas de su propia ficha de Google Maps y revisadas una
+   por una antes de usarlas. Ninguna de stock.
+   Sin logo real utilizable: el isotipo (taza en círculo) solo existe
+   fotografiado en ángulo sobre el vidrio de la puerta, así que recortarlo
+   queda torcido — se usa el wordmark tipográfico, como en los demás
+   proyectos del portafolio sin logo vectorial. */
+const HERO_SRC = 'fotos/fachada-noche.jpg';
+const GAL_UNO_SRC = 'fotos/entrada.jpg';
+const GAL_DOS_SRC = 'fotos/interior-vitrina.jpg';
+const GAL_TRES_SRC = 'fotos/cafe-croissant.jpg';
 
-document.getElementById('logoNav').src = LOGO_SRC;
-document.getElementById('logoFooter').src = LOGO_SRC;
 document.getElementById('heroPhoto').src = HERO_SRC;
 document.getElementById('galUno').src = GAL_UNO_SRC;
 document.getElementById('galDos').src = GAL_DOS_SRC;
