@@ -11,11 +11,19 @@ const HERO_SRC = 'fotos/fachada-noche.jpg';
 const GAL_UNO_SRC = 'fotos/entrada.jpg';
 const GAL_DOS_SRC = 'fotos/interior-vitrina.jpg';
 const GAL_TRES_SRC = 'fotos/cafe-croissant.jpg';
+/* Estas tres estaban bajadas pero sin usar. El chocolate con nieve y el
+   letrero muestran su marca real en la fachada: valía la pena mostrarlas. */
+const GAL_CUATRO_SRC = 'fotos/chocolate-nieve.jpg';
+const GAL_CINCO_SRC = 'fotos/letrero.jpg';
+const GAL_SEIS_SRC = 'fotos/desayuno.jpg';
 
 document.getElementById('heroPhoto').src = HERO_SRC;
 document.getElementById('galUno').src = GAL_UNO_SRC;
 document.getElementById('galDos').src = GAL_DOS_SRC;
 document.getElementById('galTres').src = GAL_TRES_SRC;
+document.getElementById('galCuatro').src = GAL_CUATRO_SRC;
+document.getElementById('galCinco').src = GAL_CINCO_SRC;
+document.getElementById('galSeis').src = GAL_SEIS_SRC;
 
 /* ============================================================
    CARTA — productos reales (mencionados directamente en Google Maps
