@@ -32,8 +32,8 @@ document.getElementById('galSeis').src = GAL_SEIS_SRC;
    ============================================================ */
 const MENU = {
   'Café': [
-    { n: 'Café Machiato con Muffins de Arándanos', d: 'Destacado real de la ficha de Google Maps.' },
-    { n: 'Un Latte Con Amor', d: 'Destacado real de la ficha de Google Maps.' },
+    { n: 'Café Machiato con Muffins de Arándanos', d: 'Uno de nuestros destacados.' },
+    { n: 'Un Latte Con Amor', d: 'Uno de nuestros destacados.' },
     { n: 'Chocolate espeso', d: 'Mencionado por su nombre real en una reseña.' },
   ],
   'Para acompañar': [
