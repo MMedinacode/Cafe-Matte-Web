@@ -11,7 +11,7 @@
   - Instagram real: @cafe_matte (2688 seguidores) — bio real citada tal cual ("Cafetería de
     barrio desde 2015, esquina de Jorge Matte con Eliecer Parada")
   - Teléfono real: (2) 3312 1043 — sin WhatsApp confirmado, se usa tel: en vez de wa.me
-  - 3 reseñas reales con nombre real (Andrew, Analí Ojeda, Ana Magdalena — Local Guide con
+  - 3 reseñas con nombre real (Andrew, Analí Ojeda, Ana Magdalena — Local Guide con
     850 reseñas), elegidas ordenando por "Calificación más alta" en Maps (hay reseñas
     recientes negativas sobre propina agregada sin avisar y horario — no se ocultan del
     todo: se menciona el tema de forma honesta en Visítanos, sin usar esas reseñas).
@@ -64,6 +64,83 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Quicksand:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Café Matte",
+  "description": "Café Matte. La esquina de Jorge Matte con Eliecer Parada. 4.5★ con 582 opiniones en Google.",
+  "image": "https://mmedinacode.github.io/Cafe-Matte-Web/fotos/fachada-noche.jpg",
+  "url": "https://mmedinacode.github.io/Cafe-Matte-Web/",
+  "telephone": "+56233121043",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Eliecer Parada 1832",
+    "addressLocality": "Providencia",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://instagram.com/cafe_matte"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:30",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:30",
+      "closes": "20:30"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -119,13 +196,13 @@
     <div class="section-inner">
       <p class="section-eyebrow reveal">Nosotros</p>
       <h2 class="section-title reveal">Un clásico de barrio en Providencia</h2>
-      <p class="section-lead reveal">Desde 2015 en la esquina de Jorge Matte con Eliecer Parada. Café, pasteles, helados y buena atención — el tipo de local al que se vuelve una y mil veces, como dicen los propios vecinos en sus reseñas.</p>
+      <p class="section-lead reveal">Desde 2015 en la esquina de Jorge Matte con Eliecer Parada. Café, pasteles, helados y buena atención — el tipo de local al que se vuelve una y mil veces, como dicen los propios vecinos en nuestras reseñas.</p>
 
       <div class="pilares-grid">
         <div class="pilar-card reveal">
           <span class="pilar-num">01</span>
           <h3>Café de verdad</h3>
-          <p>Café en su punto y buena atención — es lo que más repiten los clientes en sus reseñas reales de Google, una y otra vez.</p>
+          <p>Café en su punto y buena atención — es lo que más repiten los clientes en nuestras reseñas de Google, una y otra vez.</p>
         </div>
         <div class="pilar-card reveal">
           <span class="pilar-num">02</span>
@@ -157,7 +234,7 @@
     <div class="section-inner">
       <p class="section-eyebrow reveal">Carta</p>
       <h2 class="section-title reveal">Café, pasteles y algo para acompañar</h2>
-      <p class="menu-note reveal">Estos son productos reales de Café Matte, mencionados directamente en su ficha de Google y en reseñas de clientes. Hay una foto de la pizarra de precios de septiembre 2025, pero el texto no se alcanza a leer con certeza — por eso todo aparece como <strong>"Consultar"</strong>, para no arriesgar un precio equivocado.</p>
+      <p class="menu-note reveal">Los precios se consultan en el local.</p>
 
       <div id="menuTabs" class="menu-tabs"></div>
       <div id="menuPanels" class="menu-panels"></div>
@@ -270,5 +347,7 @@
 <script>window.REDES={"intro": "Cafetería de barrio desde 2015. Su Instagram cuenta el día a día de la esquina de Jorge Matte con Eliecer Parada.", "instagram": {"user": "cafe_matte", "seguidores": "2.688", "fotos": ["fotos/cafe-croissant.jpg", "fotos/chocolate-nieve.jpg", "fotos/entrada.jpg"]}, "telefono": {"numero": "+56233121043", "nota": "Teléfono fijo."}};</script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="vida.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
